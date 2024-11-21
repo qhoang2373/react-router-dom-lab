@@ -24,7 +24,7 @@ return (
     <Route path="/mailboxes/:mailboxId" element={<MailboxDetails mailboxes={mailboxes} />} />
 
     <Route path='*' element={<h2>Whoops, Mailbox Not Found</h2>}/>
-    
+
     </Routes>
   </>
 );
