@@ -1,9 +1,13 @@
 import NavBar from './components/NavBar';
-import { Route, Routes } from 'react-router-dom';
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import MailboxForm from './components/MailboxForm';
 import MailboxList from './components/MailboxList';
+<<<<<<< HEAD
 import MailboxDetails from '.components/MailboxDetails';
+=======
+import MailboxDetails from './components/MailboxDetails';
+>>>>>>> 9899b50210bf374033fdfc991303546606917649
 
 const App = () => {
   const[mailboxes, setMailboxes] = useState(initialState)
@@ -29,3 +33,4 @@ return (
 };
 
 export default App;
+
