@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const MailboxList = ({ mailboxes }) => { 
+const MailboxList = ({ mailboxes }) => {
   return (
     <>
       <h1>Mailbox List</h1>
