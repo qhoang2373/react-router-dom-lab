@@ -7,7 +7,7 @@ const initialState = {
     boxSize:'',
 }
 
-const MailboxForm = () => {
+const MailboxForm = (props) => {
     const navigate = useNavigate();
     const [formInfo, setFormInfo] = useState(initialState)
 
@@ -15,13 +15,12 @@ const handleSubmit = (event) => {
     event.preventDefault();
     props.addMailbox(formInfo);
     setFormInfo(initialState);
-    navigate("/mailboxes")
+    navigate("/mailboxes");
 }
 
 const handleInputChange = (event) => {
     event.preventDefault()
     setFormInfo({...formInfo, [event.target.name]:event.target.value})
-    d
 }
 
 return (
