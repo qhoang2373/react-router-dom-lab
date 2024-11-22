@@ -7,6 +7,12 @@ import MailboxDetails from './components/MailboxDetails';
 import './App.css'
 
 
+const initialState = {
+  _id: 0,
+  boxholder: '',
+  boxSize: '',
+};
+
 const App = () => {
   const [mailboxes, setMailboxes] = useState(initialState);
 
